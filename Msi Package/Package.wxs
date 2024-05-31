@@ -1,0 +1,14 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+  <Package Name="Msi_Package" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="{47CAC45F-12F2-40AB-A882-52E5DD2CF142}">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  <UI>
+	  <ui:WixUI Id="WixUI_Minimal" />
+  </UI>
+  
+  </Package>
+</Wix>

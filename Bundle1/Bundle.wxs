@@ -1,0 +1,13 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
+  <Bundle Name="Bundle1" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="b4e54222-c2c3-4144-adf6-4983bbeb7c54">
+    <BootstrapperApplication>
+      <bal:WixInternalUIBootstrapperApplication Theme="standard" />
+    </BootstrapperApplication>
+
+    <Chain>
+	    <MsiPackage Id="MsiPackage"
+	                SourceFile="$(var.Msi_Package.TargetPath)"/>
+    </Chain>
+
+  </Bundle>
+</Wix>
